@@ -1,6 +1,6 @@
 package xitrum
 
-import xitrum.util.{CoffeeScriptCompiler, Json}
+import xitrum.util.{CoffeeScriptCompiler, SeriDeseri}
 
 object Knockout {
   def js(implicit action: Action) = {
@@ -42,7 +42,7 @@ object Knockout {
   private def applyBindingsJs(model: AnyRef, scopeSelector: Option[String], syncActionClass: Class[_ <: Action], js: String)(implicit action: Action) {
     // jQuery automatically converts Ajax response based on content type header
     val prepareModel =
-      "var model = ko.mapping.fromJS(" + Json.generate(model) + ");\n" +
+      "var model = ko.mapping.fromJS(" + SeriDeseri.toJson(model) + ");\n" +
       (if (scopeSelector.isEmpty) "ko.applyBindings(model);\n" else "ko.applyBindings(model, " + scopeSelector + "[0]);\n")
     val prepareSync =
       "var sync = function() {\n" +
