@@ -11,7 +11,7 @@ object Knockout {
       </xml:group>
     else
       <xml:group>
-        <script type="text/javascript" src={action.resourceUrl("xitrum-ko/knockout-3.0.0.js")}></script>
+        <script type="text/javascript" src={action.resourceUrl("xitrum-ko/knockout-3.1.0.js")}></script>
         <script type="text/javascript" src={action.resourceUrl("xitrum-ko/knockout.mapping-2.4.1.js")}></script>
       </xml:group>
   }
