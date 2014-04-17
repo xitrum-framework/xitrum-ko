@@ -8,7 +8,7 @@ Edit your Xitrum project's build.sbt:
 
 ::
 
-  libraryDependencies += "tv.cntt" %% "xitrum-ko" % "1.1"
+  libraryDependencies += "tv.cntt" %% "xitrum-ko" % "1.2"
 
 Usage
 ~~~~~
