@@ -50,7 +50,7 @@ snippet. If you want to use JS, use ``applyBindingsJs``.
 
 Helpers:
 
-* applyBindingsCs(model: AnyRef, syncActionClass: Class[_ <: Action], cs: String)
-* applyBindingsCs(model: AnyRef, scopeSelector: String, syncActionClass: Class[_ <: Action], cs: String)
-* applyBindingsJs(model: AnyRef, syncActionClass: Class[_ <: Action], js: String)
-* applyBindingsJs(model: AnyRef, scopeSelector: String, syncActionClass: Class[_ <: Action], js: String)
+* ``applyBindingsCs(model: AnyRef, syncActionClass: Class[_ <: Action], cs: String)``
+* ``applyBindingsCs(model: AnyRef, scopeSelector: String, syncActionClass: Class[_ <: Action], cs: String)``
+* ``applyBindingsJs(model: AnyRef, syncActionClass: Class[_ <: Action], js: String)``
+* ``applyBindingsJs(model: AnyRef, scopeSelector: String, syncActionClass: Class[_ <: Action], js: String)``
