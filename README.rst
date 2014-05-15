@@ -1,4 +1,4 @@
-This is a plugin for `Xitrum <http://ngocdaothanh.github.io/xitrum/>`_ that
+This is a plugin for `Xitrum <http://xitrum-framework.github.io/xitrum/>`_ that
 provides some convenient helpers to work with `Knockout.js <http://knockoutjs.com/>`_.
 
 Config your Xitrum project to use this plugin
@@ -13,9 +13,9 @@ Edit your Xitrum project's build.sbt:
 Usage
 ~~~~~
 
-See Knockout.js demo in the project `xitrum-demos <https://github.com/ngocdaothanh/xitrum-demos>`_.
+See Knockout.js demo in the project `xitrum-demos <https://github.com/xitrum-framework/xitrum-demos>`_.
 
-Assume that you are using `Scalate template engine <https://github.com/ngocdaothanh/xitrum-scalate>`_.
+Assume that you are using `Scalate template engine <https://github.com/xitrum-framework/xitrum-scalate>`_.
 
 1.
 
