@@ -1,4 +1,4 @@
-This is a plugin for `Xitrum <http://xitrum-framework.github.io/xitrum/>`_ that
+This is a plugin for `Xitrum <http://xitrum-framework.github.io/>`_ that
 provides some convenient helpers to work with `Knockout.js <http://knockoutjs.com/>`_.
 
 Config your Xitrum project to use this plugin
@@ -8,7 +8,7 @@ Edit your Xitrum project's build.sbt:
 
 ::
 
-  libraryDependencies += "tv.cntt" %% "xitrum-ko" % "1.4"
+  libraryDependencies += "tv.cntt" %% "xitrum-ko" % "1.5"
 
 Usage
 ~~~~~

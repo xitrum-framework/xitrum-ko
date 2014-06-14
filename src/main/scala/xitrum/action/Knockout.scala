@@ -40,7 +40,7 @@ object Knockout {
       (if (scopeSelector.isEmpty) "ko.applyBindings(model);\n" else "ko.applyBindings(model, " + scopeSelector + "[0]);\n")
     val prepareSync =
       "var sync = function() {\n" +
-        "$.post('" + Config.routesReverseMappings(syncActionClass).url(Map()) + """', {model: ko.mapping.toJSON(model)}, function(data) {
+        "$.post('" + Config.routes.reverseMappings(syncActionClass.getName).url(Map.empty) + """', {model: ko.mapping.toJSON(model)}, function(data) {
           if (typeof(data) === 'object') {
             model = ko.mapping.fromJS(data);
             ko.applyBindings(model);
