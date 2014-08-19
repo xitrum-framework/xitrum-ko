@@ -2,7 +2,7 @@ organization := "tv.cntt"
 
 name := "xitrum-ko"
 
-version := "1.6-SNAPSHOT"
+version := "1.7-SNAPSHOT"
 
 scalaVersion := "2.11.2"
 //scalaVersion := "2.10.4"
@@ -20,7 +20,7 @@ javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
 // and it takes several hours to sync from Sonatype to Maven Central
 resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories/releases/"
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "3.17" % "provided"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.18" % "provided"
 
 libraryDependencies += "org.webjars" % "knockout" % "3.2.0"
 
