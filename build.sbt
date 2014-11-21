@@ -4,10 +4,10 @@ name := "xitrum-ko"
 
 version := "1.7-SNAPSHOT"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.4"
 //scalaVersion := "2.10.4"
 
-crossScalaVersions := Seq("2.11.2", "2.10.4")
+crossScalaVersions := Seq("2.11.4", "2.10.4")
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
