@@ -1,13 +1,10 @@
 organization := "tv.cntt"
+name         := "xitrum-ko"
+version      := "1.7-SNAPSHOT"
 
-name := "xitrum-ko"
-
-version := "1.7-SNAPSHOT"
-
-scalaVersion := "2.11.4"
-//scalaVersion := "2.10.4"
-
-crossScalaVersions := Seq("2.11.4", "2.10.4")
+scalaVersion := "2.11.6"
+//scalaVersion := "2.10.5"
+crossScalaVersions := Seq("2.11.6", "2.10.5")
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
