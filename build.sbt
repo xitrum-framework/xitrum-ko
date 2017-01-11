@@ -1,25 +1,21 @@
 organization := "tv.cntt"
 name         := "xitrum-ko"
-version      := "1.7-SNAPSHOT"
+version      := "1.8.0-SNAPSHOT"
 
-scalaVersion := "2.11.6"
-//scalaVersion := "2.10.5"
-crossScalaVersions := Seq("2.11.6", "2.10.5")
+crossScalaVersions := Seq("2.12.1", "2.11.8")
+scalaVersion := "2.12.1"
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
-// Xitrum requires Java 7
-javacOptions ++= Seq("-source", "1.7", "-target", "1.7")
+// Xitrum requires Java 8
+javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 //------------------------------------------------------------------------------
 
-// Most Scala projects are published to Sonatype, but Sonatype is not default
-// and it takes several hours to sync from Sonatype to Maven Central
-resolvers += "SonatypeReleases" at "http://oss.sonatype.org/content/repositories/releases/"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.28.2" % "provided"
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "3.18" % "provided"
-
-libraryDependencies += "org.webjars" % "knockout" % "3.2.0"
+libraryDependencies += "org.webjars.bower" % "knockoutjs" % "3.4.0"
+libraryDependencies += "org.webjars.bower" % "knockout-mapping" % "2.4.1"
 
 //------------------------------------------------------------------------------
 

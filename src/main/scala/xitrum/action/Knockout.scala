@@ -5,8 +5,8 @@ import xitrum.util.{CoffeeScriptCompiler, SeriDeseri}
 object Knockout {
   def js(implicit action: Action) = {
     <xml:group>
-      <script type="text/javascript" src={action.webJarsUrl("knockout/3.2.0",         "knockout.debug.js",         "knockout.js")}></script>
-      <script type="text/javascript" src={action.webJarsUrl("knockout.mapping/2.4.1", "knockout.mapping.debug.js", "knockout.mapping.js")}></script>
+      <script type="text/javascript" src={action.webJarsUrl("knockoutjs/3.4.0/dist",                "knockout.debug.js",                "knockout.js")}></script>
+      <script type="text/javascript" src={action.webJarsUrl("knockout-mapping/2.4.1/build/output", "knockout.mapping-latest.debug.js", "knockout.mapping-latest.js")}></script>
     </xml:group>
   }
 
