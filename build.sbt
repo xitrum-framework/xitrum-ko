@@ -1,9 +1,9 @@
 organization := "tv.cntt"
 name         := "xitrum-ko"
-version      := "1.8.0-SNAPSHOT"
+version      := "1.8.1-SNAPSHOT"
 
-crossScalaVersions := Seq("2.12.1", "2.11.8")
-scalaVersion := "2.12.1"
+crossScalaVersions := Seq("2.13.4", "2.12.13")
+scalaVersion := "2.13.4"
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
@@ -12,7 +12,7 @@ javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
 //------------------------------------------------------------------------------
 
-libraryDependencies += "tv.cntt" %% "xitrum" % "3.28.2" % "provided"
+libraryDependencies += "tv.cntt" %% "xitrum" % "3.30.0" % "provided"
 
 libraryDependencies += "org.webjars.bower" % "knockoutjs" % "3.4.0"
 libraryDependencies += "org.webjars.bower" % "knockout-mapping" % "2.4.1"
