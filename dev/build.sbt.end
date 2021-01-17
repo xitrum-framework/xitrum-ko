@@ -1,14 +1,11 @@
 
-// Add diagrams to Scaladoc, graphviz is required
-scalacOptions in (Compile, doc) += "-diagrams"
-
 // Publish to Sonatype
 // https://github.com/sbt/sbt.github.com/blob/gen-master/src/jekyll/using_sonatype.md
 
-publishTo <<= (version) { version: String =>
+publishTo := {
   val nexus = "https://oss.sonatype.org/"
-  if (version.trim.endsWith("SNAPSHOT")) Some("snapshots" at nexus + "content/repositories/snapshots")
-  else                                   Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+  if (version.value.trim.endsWith("SNAPSHOT")) Some("snapshots" at nexus + "content/repositories/snapshots")
+  else                                         Some("releases"  at nexus + "service/local/staging/deploy/maven2")
 }
 
 publishMavenStyle := true
@@ -18,7 +15,7 @@ publishArtifact in Test := false
 pomIncludeRepository := { _ => false }
 
 pomExtra := (
-  <url>http://xitrum-framework.github.io/</url>
+  <url>https://github.com/xitrum-framework/xitrum-ko</url>
   <licenses>
     <license>
       <name>MIT</name>
